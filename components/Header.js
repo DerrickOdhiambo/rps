@@ -1,9 +1,10 @@
 import Image from 'next/image';
+import styles from '../styles/Header.module.css';
 
 const Header = () => {
   return (
     <>
-      <div className='header'>
+      <div className={styles.header}>
         <div className='image'>
           <Image
             priority
@@ -14,7 +15,7 @@ const Header = () => {
             alt='Rock Paper Scissors'
           />
         </div>
-        <div className='score'>
+        <div className={styles.score}>
           <h4>score</h4>
           <span>12</span>
         </div>
