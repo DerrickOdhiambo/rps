@@ -1,0 +1,66 @@
+.results {
+  height: 60vh;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.my__pick h4 {
+  text-align: center;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.my__pick div {
+  border-radius: 50%;
+  width: 148px;
+  height: 144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.paper {
+  border: 18px solid hsl(230, 89%, 65%);
+  box-shadow: 0px 10px 5px gray inset, 0px 10px 0px -1px hsl(230, 89%, 62%);
+}
+.scissors {
+  border: 18px solid hsl(40, 84%, 53%);
+  box-shadow: 0px 10px 5px gray inset, 0px 10px 0px -1px hsl(39, 89%, 49%);
+}
+.rock {
+  border: 18px solid hsl(349, 70%, 56%);
+  box-shadow: 0px 10px 5px gray inset, 0px 10px 0px -1px hsl(349, 71%, 52%);
+}
+
+.results h1 {
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.results button {
+  height: 2.5rem;
+  width: 11.5rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.results button:hover {
+  color: red;
+}
+
+.win {
+  box-shadow: 0px 50px rgba(white, white, white, 0.75),
+    0px 100px rgba(white, white, white, 0.5),
+    0px 150px rgba(white, white, white, 0.25);
+}

@@ -14,7 +14,7 @@
 
 .main__body div {
   border-radius: 50%;
-  width: 134px;
+  width: 138px;
   height: 134px;
   display: flex;
   justify-content: center;
@@ -26,25 +26,47 @@
 .main__body div:hover {
   transition: all 0.3s;
   transform: translate3d(0px, -8px, 0px);
-  box-shadow: 0px 10px 5px gray inset;
 }
 
 .paper {
   margin-right: 2rem;
   margin-bottom: 2rem;
   border: 18px solid hsl(230, 89%, 65%);
-  box-shadow: 0px 10px 0px -1px hsl(230, 89%, 62%);
+  box-shadow: 0px 7px 5px gray inset, 0px 8px 0px -1px hsl(230, 89%, 62%);
   transition: all 0.3s;
 }
 .scissors {
   margin-left: 2rem;
   margin-bottom: 2rem;
   border: 18px solid hsl(40, 84%, 53%);
-  box-shadow: 0px 10px 0px -1px hsl(39, 89%, 49%);
+  box-shadow: 0px 7px 5px gray inset, 0px 8px 0px -1px hsl(39, 89%, 49%);
   transition: all 0.3s;
 }
 .rock {
   border: 18px solid hsl(349, 70%, 56%);
-  box-shadow: 0px 10px 0px -1px hsl(349, 71%, 52%);
+  box-shadow: 0px 7px 5px gray inset, 0px 8px 0px -1px hsl(349, 71%, 52%);
   transition: all 0.3s;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .main__body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main__body div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+}
+@media screen and (max-width: 430px) {
+  .main__body div {
+    width: 88px;
+    height: 84px;
+  }
 }

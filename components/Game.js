@@ -1,10 +1,15 @@
 import Image from 'next/image';
+import { useState } from 'react';
 import styles from '../styles/Game.module.css';
 
-const Game = () => {
+const Game = ({ setMyChoice }) => {
+  const myChoice = (e) => {
+    setMyChoice(e.currentTarget.dataset.id);
+    console.log(e.currentTarget.dataset.id);
+  };
   return (
     <div className={styles.main__body}>
-      <div className={styles.paper}>
+      <div data-id='paper' onClick={myChoice} className={styles.paper}>
         <Image
           priority
           src='/images/icon-paper.svg'
@@ -14,7 +19,7 @@ const Game = () => {
           alt='Rock Paper Scissors'
         />
       </div>
-      <div className={styles.scissors}>
+      <div data-id='scissors' onClick={myChoice} className={styles.scissors}>
         <Image
           priority
           src='/images/icon-scissors.svg'
@@ -24,7 +29,7 @@ const Game = () => {
           alt='Rock Paper Scissors'
         />
       </div>
-      <div className={styles.rock}>
+      <div data-id='rock' onClick={myChoice} className={styles.rock}>
         <Image
           priority
           src='/images/icon-rock.svg'

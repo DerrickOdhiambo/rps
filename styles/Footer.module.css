@@ -11,4 +11,16 @@
   border-radius: 8px;
   padding: 8px 35px;
   margin-right: 2rem;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .footer {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .footer span {
+    margin-right: 0;
+  }
 }

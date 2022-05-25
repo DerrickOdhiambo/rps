@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styles from '../styles/Header.module.css';
 
-const Header = () => {
+const Header = ({ score }) => {
   return (
     <>
       <div className={styles.header}>
@@ -17,7 +17,7 @@ const Header = () => {
         </div>
         <div className={styles.score}>
           <h4>score</h4>
-          <span>12</span>
+          <span>{score}</span>
         </div>
       </div>
     </>
