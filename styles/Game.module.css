@@ -63,10 +63,38 @@
     cursor: pointer;
     transition: all 0.3s;
   }
+  .paper {
+    border: 10px solid hsl(230, 89%, 65%);
+  }
+  .scissors {
+    border: 10px solid hsl(40, 84%, 53%);
+  }
+  .rock {
+    border: 10px solid hsl(349, 70%, 56%);
+  }
 }
 @media screen and (max-width: 430px) {
   .main__body div {
-    width: 88px;
-    height: 84px;
+    width: 98px;
+    height: 94px;
+  }
+}
+
+@media screen and (max-width: 314px) {
+  .main__body {
+    height: 40vh;
+  }
+  .main__body div {
+    width: 78px;
+    height: 74px;
+  }
+  .paper {
+    border: 6px solid hsl(230, 89%, 65%);
+  }
+  .scissors {
+    border: 6px solid hsl(40, 84%, 53%);
+  }
+  .rock {
+    border: 6px solid hsl(349, 70%, 56%);
   }
 }

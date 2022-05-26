@@ -45,3 +45,8 @@
     font-size: 2.61rem;
   }
 }
+@media screen and (max-width: 314px) {
+  .header {
+    width: 87%;
+  }
+}
