@@ -43,7 +43,7 @@ const Result = ({
     <>
       <div className={styles.results}>
         <div className={`${styles.my__pick} `}>
-          <h4>You picked</h4>
+          <h4 className='desktop'>You picked</h4>
           <div
             className={`${styles[myChoice]} ${win === 'win' ? styles.win : ''}`}
           >
@@ -56,6 +56,7 @@ const Result = ({
               alt='Rock Paper Scissors'
             />
           </div>
+          <h4 className='responsive'>You picked</h4>
         </div>
         <div className='game' style={{ textAlign: 'center' }}>
           {win === 'win' && (
@@ -78,7 +79,7 @@ const Result = ({
           </button>
         </div>
         <div className={`${styles.my__pick} `}>
-          <h4>The House picked</h4>
+          <h4 className='desktop'>The House picked</h4>
           <div
             className={`${styles[computer]} ${
               win === 'lose' ? styles.win : ''
@@ -93,6 +94,7 @@ const Result = ({
               alt='Rock Paper Scissors'
             />
           </div>
+          <h4 className='responsive'>The House picked</h4>
         </div>
       </div>
       <div className='game_responsive' style={{ textAlign: 'center' }}>

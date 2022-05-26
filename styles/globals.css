@@ -27,6 +27,7 @@ body {
     font-size: 3rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
+    margin-top: 1rem;
   }
   .game_responsive button {
     height: 2.5rem;
@@ -36,5 +37,12 @@ body {
     cursor: pointer;
     outline: none;
     border: none;
+  }
+  h4.responsive {
+    display: block;
+    margin-top: 1rem;
+  }
+  h4.desktop {
+    display: none;
   }
 }
