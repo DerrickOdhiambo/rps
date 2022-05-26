@@ -78,24 +78,32 @@ const Result = ({
             Play Again
           </button>
         </div>
-        <div className={`${styles.my__pick} `}>
-          <h4 className='desktop'>The House picked</h4>
-          <div
-            className={`${styles[computer]} ${
-              win === 'lose' ? styles.win : ''
-            }`}
-          >
-            <Image
-              priority
-              src={`/images/icon-${computer}.svg`}
-              className=''
-              height={50}
-              width={50}
-              alt='Rock Paper Scissors'
-            />
+        {computer ? (
+          <div className={`${styles.my__pick} `}>
+            <h4 className='desktop'>The House picked</h4>
+            <div
+              className={`${styles[computer]} ${
+                win === 'lose' ? styles.win : ''
+              }`}
+            >
+              <Image
+                priority
+                src={`/images/icon-${computer}.svg`}
+                className=''
+                height={50}
+                width={50}
+                alt='Rock Paper Scissors'
+              />
+            </div>
+            <h4 className='responsive'>The House picked</h4>
           </div>
-          <h4 className='responsive'>The House picked</h4>
-        </div>
+        ) : (
+          <div className={`${styles.my__pick__waiting}`}>
+            <h4 className='desktop'>The house picked</h4>
+            <div></div>
+            <h4 className='responsive'>The house picked</h4>
+          </div>
+        )}
       </div>
       <div className='game_responsive' style={{ textAlign: 'center' }}>
         {win === 'win' && (

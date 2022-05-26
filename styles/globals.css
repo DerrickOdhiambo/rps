@@ -13,6 +13,17 @@ body {
 .game_responsive {
   display: none;
 }
+h4.responsive {
+  display: none;
+}
+h4.desktop {
+  display: block;
+  text-align: center;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+}
 
 @media screen and (max-width: 600px) {
   .game {
@@ -41,6 +52,11 @@ body {
   h4.responsive {
     display: block;
     margin-top: 1rem;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0;
   }
   h4.desktop {
     display: none;
