@@ -10,3 +10,31 @@ body {
   max-width: 1366px;
   margin: 0 auto;
 }
+.game_responsive {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .game {
+    display: none;
+  }
+
+  .game_responsive {
+    display: block;
+  }
+  .game_responsive h1 {
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  .game_responsive button {
+    height: 2.5rem;
+    width: 11.5rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+}

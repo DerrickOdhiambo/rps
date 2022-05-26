@@ -57,7 +57,7 @@ const Result = ({
             />
           </div>
         </div>
-        <div style={{ textAlign: 'center' }} className={styles.game}>
+        <div className='game' style={{ textAlign: 'center' }}>
           {win === 'win' && (
             <div className={styles.show__results}>
               <h1>You Win</h1>
@@ -94,6 +94,26 @@ const Result = ({
             />
           </div>
         </div>
+      </div>
+      <div className='game_responsive' style={{ textAlign: 'center' }}>
+        {win === 'win' && (
+          <div className={styles.show__results}>
+            <h1>You Win</h1>
+          </div>
+        )}
+        {win === 'lose' && (
+          <div className={styles.show__results}>
+            <h1>You Lose</h1>
+          </div>
+        )}
+        {win === 'draw' && (
+          <div className={styles.show__results}>
+            <h1>Draw</h1>
+          </div>
+        )}
+        <button className={styles.btn} onClick={resetGame}>
+          Play Again
+        </button>
       </div>
     </>
   );
