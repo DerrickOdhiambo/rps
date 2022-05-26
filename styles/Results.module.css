@@ -66,12 +66,7 @@
   color: red;
 }
 
-.win {
-  box-shadow: 0px 50px rgba(white, white, white, 0.75),
-    0px 100px rgba(white, white, white, 0.5),
-    0px 150px rgba(white, white, white, 0.25);
-}
-
+/* Media Queries */
 @media screen and (max-width: 600px) {
   .results {
     width: 100%;

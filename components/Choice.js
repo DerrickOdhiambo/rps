@@ -7,9 +7,7 @@ const Choice = ({ score, setScore, myChoice, setMyChoice }) => {
 
   const compPick = () => {
     const choices = ['rock', 'paper', 'scissors'];
-    setTimeout(() => {
-      setComputer(choices[Math.floor(Math.random() * 3)]);
-    }, 2000);
+    setComputer(choices[Math.floor(Math.random() * 3)]);
   };
 
   useEffect(() => {

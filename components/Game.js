@@ -1,14 +1,25 @@
 import Image from 'next/image';
-import { useState } from 'react';
+import { motion } from 'framer-motion';
 import styles from '../styles/Game.module.css';
+
+const variants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+};
 
 const Game = ({ setMyChoice }) => {
   const myChoice = (e) => {
     setMyChoice(e.currentTarget.dataset.id);
     console.log(e.currentTarget.dataset.id);
   };
+
   return (
-    <div className={styles.main__body}>
+    <motion.div
+      animate='visible'
+      initial='hidden'
+      variants={variants}
+      className={styles.main__body}
+    >
       <div data-id='paper' onClick={myChoice} className={styles.paper}>
         <Image
           priority
@@ -39,7 +50,7 @@ const Game = ({ setMyChoice }) => {
           alt='Rock Paper Scissors'
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -4,7 +4,6 @@ import Game from '../components/Game';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Choice from '../components/Choice';
-import Router, { useRouter } from 'next/router';
 
 export default function Home() {
   const [myChoice, setMyChoice] = useState('');

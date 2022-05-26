@@ -24,7 +24,11 @@ h4.desktop {
   color: white;
   letter-spacing: 1px;
 }
+.winner {
+  border: 18px solid;
+}
 
+/* Media Queries */
 @media screen and (max-width: 600px) {
   .game {
     display: none;
